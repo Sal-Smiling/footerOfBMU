@@ -1,576 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
 </head>
 
 <body>
-    <!-- header -->
+    <!-- Brand BMU Logo img -->
     <div class="w-full flex justify-center items-center p-3">
         <img class="xl:h-[10rem] lg:h-[8rem] md:h-[5rem] h-[4rem]" src="../src/assets/Image/LogoBMU1.png" />
     </div>
-
-    <!-- main navbar -->
-    <nav class="bg-red-600 border-gray-200 dark:bg-red-600">
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto">
-            <!-- Name of logo -->
-            <a class="flex items-center lg:hidden space-x-3 ms-2 rtl:space-x-reverse">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Menu</span>
-            </a>
-            <!-- Logo -->
-            <div class="flex items-center lg:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-                <button type="button" data-dropdown-toggle="language-dropdown-menu" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-          <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
-            <path fill="#b22234" d="M0 0h7410v3900H0z" />
-            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300" />
-            <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-            <g fill="#fff">
-              <g id="d">
-                <g id="c">
-                  <g id="e">
-                    <g id="b">
-                      <path id="a" d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
-                      <use xlink:href="#a" y="420" />
-                      <use xlink:href="#a" y="840" />
-                      <use xlink:href="#a" y="1260" />
-                    </g>
-                    <use xlink:href="#a" y="1680" />
-                  </g>
-                  <use xlink:href="#b" x="247" y="210" />
-                </g>
-                <use xlink:href="#c" x="494" />
-              </g>
-              <use xlink:href="#d" x="988" />
-              <use xlink:href="#c" x="1976" />
-              <use xlink:href="#e" x="2470" />
-            </g>
-          </svg>
-          English (US)
-        </button>
-                <!-- Dropdown -->
-                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-red-600" id="language-dropdown-menu">
-                    <ul class="py-2 font-medium" role="none">
-                        <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                                <div class="inline-flex items-center">
-                                    <svg aria-hidden="true" class="h-3.5 w-3.5 rounded-full me-2" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
-                    <g fill-rule="evenodd">
-                      <g stroke-width="1pt">
-                        <path fill="#bd3d44"
-                          d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                          transform="scale(3.9385)" />
-                        <path fill="#fff"
-                          d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                          transform="scale(3.9385)" />
-                      </g>
-                      <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
-                      <path fill="#fff"
-                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                        transform="scale(3.9385)" />
-                    </g>
-                  </svg> English (US)
-                                </div>
-                            </a>
+    <!-- Header Full Screen -->
+    <div class="bg-red-700  w-ful l relative mb-2 lg:block hidden">
+        <div class="max-w-7xl m-auto justify-between">
+            <ul class="justify-between items-center text-2xl text-white flex">
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">About Us</a>
+                    <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">Message from the Chairman</a></li>
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Vision,Mission and Objective</a></li>
+                            <li><a href="#">Core Value</a></li>
+                        </ul>
+                        <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">PHilosophy</a></li>
+                            <li><a href="#">Strategic Goals</a></li>
+                            <li><a href="#">Management and Structure</a></li>
+                            <li><a href="#">Why Choosse BMU ?</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">Faculties</a>
+                    <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">Faculties</a></li>
+                            <li><a href="#">Curriculum</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">Student</a>
+                    <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">Campus Life</a></li>
+                            <li><a href="#">Community Services</a></li>
+                            <li><a href="#">Internship</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Award</a></li>
+                            <li><a href="#">Scholarship</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">Facilities</a>
+                    <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black hidden gap-y-4">
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">Admission</a>
+                    <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black hidden gap-y-4">
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                    <a href="#">New and Event</a>
+                    <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">Announcement</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header + SideBar Small Device -->
+    <div class="lg:hidden bg-red-700 flex justify-between p-3 mb-3">
+        <!-- Name That On The SideBar -->
+        <div class="uppercase font-medium text-4xl text-white">
+            <span>menu</span>
+        </div>
+        <!-- This Is Toggle Click Open -->
+        <span class="font-medium text-4xl cursor-pointer text-white" onclick="openBtn()">
+        <i class="fa-solid fa-bars"></i>
+    </span>
+        <!-- This is Menu List of SideBar -->
+        <div id="leftMenu" style="transition: .3s;" class="fixed top-0 right-[-1px] z-50 bottom-0 w-0 overflow-x-hidden text-center bg-red-700">
+            <div class="text-gray-100 text-xl">
+                <div class="p-2 mt-1 flex justify-between items-center">
+                    <h1 class="font-bold text-gray-200 ml-3">BMU</h1>
+                    <!-- This Is Toggle Click Open -->
+                    <i class="fa-solid fa-x cursor-pointer" onclick="closeBtn()"></i>
+                </div>
+                <hr class="my-2 text-gray-200" />
+            </div>
+            <!-- list 1 -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown1()">
+                    <span class="text-[15px] ml-4">About Us</span>
+                </div>
+                <!-- DropDown 1 -->
+                <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m1">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Message from the Chairman</a>
                         </li>
-                        <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                                <div class="inline-flex items-center">
-                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
-                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
-                    <path d="M0 0h512v170.7H0z" />
-                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
-                  </svg> Deutsch
-                                </div>
-                            </a>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Background</a>
                         </li>
-                        <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                                <div class="inline-flex items-center">
-                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
-                    <g fill-rule="evenodd" stroke-width="1pt">
-                      <path fill="#fff" d="M0 0h512v512H0z" />
-                      <path fill="#009246" d="M0 0h170.7v512H0z" />
-                      <path fill="#ce2b37" d="M341.3 0H512v512H341.3z" />
-                    </g>
-                  </svg> Italiano
-                                </div>
-                            </a>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Vision,Mission and Objective</a>
                         </li>
-                        <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
-                                <div class="inline-flex items-center">
-                                    <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
-                    <defs>
-                      <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
-                    </defs>
-                    <path fill="#de2910" d="M0 0h512v512H0z" />
-                    <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a" />
-                    <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a" />
-                    <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a" />
-                    <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a" />
-                    <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a" />
-                  </svg> 中文 (繁體)
-                                </div>
-                            </a>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Core Value</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">PHilosophy</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Strategic Goals</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Management and Structure</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Why Choosse BMU ?</a>
                         </li>
                     </ul>
                 </div>
-                <!-- toggle -->
-                <button data-collapse-toggle="navbar-language" type="button" class="inline-flex items-center p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-language" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15" />
-          </svg>
-        </button>
             </div>
-            <!-- menu list -->
-            <div class="items-ce5nter justify-between hidden w-full lg:flex lg:w-10/12 lg:order-1" id="navbar-language">
-                <ul class="flex flex-col hover:cursor-pointer w-full font-medium lg:p-0 lg:m-0 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 md:justify-evenly md:border-0 lg:bg-white dark:bg-red-600 lg:dark:bg-red-600 dark:border-red-600">
-                    <!-- list 1 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">About Us</a>
-                            </summary>
-                            <div class="absolute z-10 flex-col p-4 lg:hidden w-full top-10 left-[-1px] h-[300px] bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="ps-4 flex gap-3 flex-col">
-                                        <li>
-                                            <a href="#">Message from the Founder Chairman</a>
-                                        </li>
-                                        <li><a href="#">Background</a></li>
-                                        <li>
-                                            <a href="#">Vision,Misssion and Objective</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4">
-                                        <li><a href="#">Philosophy</a></li>
-                                        <li><a href="#">Strategic Goals</a></li>
-                                        <li><a href="#">Management and Structure</a></li>
-                                        <li><a href="#">Why Choose BUM ?</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute hidden hover:cursor-pointer xl:top-14 p-4 lg:top-[3.5rem] xl:left-[-262px] lg:left-[-9px] lg:flex flex-col lg:flex-row w-screen bg-slate-50 gap-6 lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex gap-3 mt-3 ps-4">
-                                    <li>
-                                        <a href="#">Message from the Chairman</a>
-                                    </li>
-                                    <li><a href="#">Background</a></li>
-                                    <li>
-                                        <a href="#">Vision,Misssion and Objective</a>
-                                    </li>
-                                    <li><a href="#">Core Value</a></li>
-                                </ul>
-                            </div>
-                            <div class="flex">
-                                <ul class="flex-col flex gap-3 mt-3 ps-4">
-                                    <li><a href="http://javscript:0/">Philosophy</a></li>
-                                    <li><a href="#">Strategic Goals</a></li>
-                                    <li><a href="#">Management and Structure</a></li>
-                                    <li><a href="#">Why Choose BUM ?</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- list 2 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">Faculties</a>
-                            </summary>
-                            <div class="z-10 absolute flex-col p-4 lg:hidden hover:cursor-pointer top-10 left-[-1px] w-screen bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4">
-                                        <li>
-                                            <a href="#">Faculties</a>
-                                        </li>
-                                        <li><a href="#">Curriculum</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute hidden p-4 hover:cursor-pointer xl:top-14 lg:top-[3.5rem] xl:left-[-463px] lg:left-[-149px] lg:flex flex-col lg:flex-row w-screen bg-slate-50 justify-between lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex mt-3 gap-3 ps-4">
-                                    <li>
-                                        <a href="#">Faculties</a>
-                                    </li>
-                                    <li><a href="#">Curriculum</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- list 3 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">Student</a>
-                            </summary>
-                            <div class="z-10 absolute flex-col p-4 lg:hidden hover:cursor-pointer top-10 left-[-1px] w-screen bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4">
-                                        <li><a href="#">Campus Life</a></li>
-                                        <li><a href="#">Community Services</a></li>
-                                        <li><a href="#">Internship</a></li>
-                                        <li><a href="#">Alumni</a></li>
-                                        <li><a href="#">Awards</a></li>
-                                        <li><a href="#">Scholarship</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute p-4 hidden hover:cursor-pointer xl:top-14 lg:top-[3.5rem] xl:left-[-41.2rem] lg:left-[-17.8rem] lg:flex flex-col lg:flex-row w-screen bg-slate-50 justify-between lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex gap-3 mt-3 ps-4">
-                                    <li><a href="#">Campus Life</a></li>
-                                    <li><a href="#">Community Services</a></li>
-                                    <li><a href="#">Internship</a></li>
-                                    <li><a href="#">Alumni</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">Scholarship</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- list 4 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">Facilities</a>
-                            </summary>
-                            <div class="z-10 absolute flex-col lg:hidden hover:cursor-pointer top-10 left-[-1px] w-screen bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4"></ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute hidden hover:cursor-pointer xl:top-14 lg:top-[3.5rem] lg:left-[-25.9rem] xl:left-[-53.1rem] flex-col w-screen bg-slate-50 justify-between lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex mt-3 ps-4"></ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- list 5 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">Admission</a>
-                            </summary>
-                            <div class="z-10 absolute flex-col lg:hidden hover:cursor-pointer top-10 left-[-1px] h-[300px] w-screen bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4"></ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute hidden hover:cursor-pointer xl:top-14 lg:top-[3.5rem] lg:left-[-548px] xl:left-[-65.3rem] w-screen bg-slate-50 justify-between lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex mt-3 ps-4"></ul>
-                            </div>
-                        </div>
-                    </li>
-                    <!-- list 6 -->
-                    <li class="lg:hover:bg-red-500 lg:p-4 p-0 relative group">
-                        <details>
-                            <summary class="block py-2 px-3 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent dark:text-white lg:group-hover:text-gray-900 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
-                                <a href="#" class="font-semibold">New and Events</a>
-                            </summary>
-                            <div class="z-10 absolute flex-col p-4 lg:hidden hover:cursor-pointer top-14 left-[-1px] w-screen bg-slate-50 justify-between transition duration-300">
-                                <div class="flex">
-                                    <ul class="flex-col flex gap-3 ps-4">
-                                        <li>
-                                            <a href="#">Announcement</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </details>
-                        <!-- dropdown -->
-                        <div class="absolute hidden p-4 hover:cursor-pointer xl:top-14 lg:top-[3.5rem] xl:left-[-1254px] lg:left-[-697px] lg:flex flex-col lg:flex-row w-screen bg-slate-50 justify-between lg:opacity-0 lg:group-hover:opacity-100 lg:invisible lg:group-hover:visible transition duration-300">
-                            <div class="flex">
-                                <ul class="flex-col flex mt-3 ps-4">
-                                    <li>
-                                        <a href="#">Announcement</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <!-- list 2 -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown2()">
+                    <span class="text-[15px] ml-4">Faculties</span>
+                </div>
+                <!-- DropDown 2 -->
+                <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m2">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Faculties</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Curriculum</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- list 3 -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown3()">
+                    <span class="text-[15px] ml-4">Student</span>
+                </div>
+                <!-- dropwDown 3 -->
+                <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m3">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Campus Life</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Community Services</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Internship</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Alumni</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Award</a>
+                        </li>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Scholarship</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- list 4 No Action Because I put Hidden -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown()">
+                    <span class="text-[15px] ml-4">Facilities</span>
+                </div>
+                <!-- DropDown No action -->
+                <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Message from the Chairman</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- list 5 No Action Because I put Hidden -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 text-white hover:text-gray-900">
+                    <span class="text-[15px] ml-4">Admission</span>
+                </div>
+                <!-- DropDown No action -->
+                <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#">Message from the Chairman</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- list 6 -->
+            <div>
+                <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown4()">
+                    <span class="text-[15px] ml-4">New and Event</span>
+                </div>
+                <!-- dropDown -->
+                <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m4">
+                    <ul>
+                        <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                            <a href="#"> Announcement </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-</body>
-
-=======
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
-  </head>
-  <body>
-<!-- Brand BMU Logo img -->
-  <div class="w-full flex justify-center items-center p-3">
-    <img class="xl:h-[10rem] lg:h-[8rem] md:h-[5rem] h-[4rem]" src="../src/assets/Image/LogoBMU1.png"/>    
-  </div>
-<!-- Header Full Screen -->   
-  <div class="bg-red-700  w-ful l relative mb-2 lg:block hidden">
-    <div class="max-w-7xl m-auto justify-between"> 
-      <ul class="justify-between items-center text-2xl text-white flex">   
-          <li class="hover:bg-slate-400 p-4 group">
-            <a href="#">About Us</a>
-            <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-              <ul class="text-black gap-y-4 grid">
-                <li><a href="#">Message from the Chairman</a></li>
-                <li><a href="#">Background</a></li>
-                <li><a href="#">Vision,Mission and Objective</a></li>
-                <li><a href="#">Core Value</a></li>
-              </ul>
-              <ul class="text-black gap-y-4 grid">
-                <li><a href="#">PHilosophy</a></li>
-                <li><a href="#">Strategic Goals</a></li>
-                <li><a href="#">Management and Structure</a></li>
-                <li><a href="#">Why Choosse BMU ?</a></li>
-              </ul> 
-            </div>
-          </li>
-          <li class="hover:bg-slate-400 p-4 group">
-            <a href="#">Faculties</a>
-            <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-              <ul class="text-black gap-y-4 grid">
-                <li><a href="#">Faculties</a></li>
-                <li><a href="#">Curriculum</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="hover:bg-slate-400 p-4 group">
-              <a href="#">Student</a>
-              <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-                <ul class="text-black gap-y-4 grid">
-                  <li><a href="#">Campus Life</a></li>
-                  <li><a href="#">Community Services</a></li>
-                  <li><a href="#">Internship</a></li>
-                  <li><a href="#">Alumni</a></li>
-                  <li><a href="#">Award</a></li>
-                  <li><a href="#">Scholarship</a></li>
-                </ul>
-              </div>
-          </li>
-          <li class="hover:bg-slate-400 p-4 group">
-            <a href="#">Facilities</a>
-            <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-              <ul class="text-black hidden gap-y-4">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="hover:bg-slate-400 p-4 group">
-            <a href="#">Admission</a>
-            <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-              <ul class="text-black hidden gap-y-4">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="hover:bg-slate-400 p-4 group">
-            <a href="#">New and Event</a>
-            <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
-              <ul class="text-black gap-y-4 grid">
-                <li><a href="#">Announcement</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-  </div>
-<!-- Header + SideBar Small Device -->
-  <div class="lg:hidden bg-red-700 flex justify-between p-3 mb-3">
-    <!-- Name That On The SideBar -->
-    <div class="uppercase font-medium text-4xl text-white">
-      <span>menu</span>
     </div>
-    <!-- This Is Toggle Click Open -->
-    <span class="font-medium text-4xl cursor-pointer text-white" onclick="openBtn()">
-        <i class="fa-solid fa-bars"></i>
-    </span>
-    <!-- This is Menu List of SideBar -->
-    <div id="leftMenu" style="transition: .3s;" class="fixed top-0 right-[-1px] z-50 bottom-0 w-0 overflow-x-hidden text-center bg-red-700">
-    <div class="text-gray-100 text-xl">
-      <div class="p-2 mt-1 flex justify-between items-center">
-          <h1 class="font-bold text-gray-200 ml-3">BMU</h1>
-          <!-- This Is Toggle Click Open -->
-          <i class="fa-solid fa-x cursor-pointer" onclick="closeBtn()"></i>
-      </div>
-      <hr class="my-2 text-gray-200"/>
-    </div>
-<!-- list 1 -->
-    <div>
-        <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white"onclick="dropDown1()">
-          <span class="text-[15px] ml-4">About Us</span>
-        </div>
-              <!-- DropDown 1 -->
-        <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m1">
-          <ul>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Message from the Chairman</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Background</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Vision,Mission and Objective</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Core Value</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">PHilosophy</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Strategic Goals</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Management and Structure</a>
-            </li>
-            <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-              <a href="#">Why Choosse BMU ?</a>
-            </li>
-          </ul>
-        </div>
-    </div>
-<!-- list 2 -->
-    <div>
-              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown2()">
-                <span class="text-[15px] ml-4">Faculties</span>
-              </div>
-              <!-- DropDown 2 -->
-              <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m2">
-                <ul>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Faculties</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Curriculum</a>
-                  </li>
-                </ul>
-              </div>
-    </div>
-<!-- list 3 -->
-    <div>
-              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown3()">
-                <span class="text-[15px] ml-4">Student</span>
-              </div>
-              <!-- dropwDown 3 -->
-              <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m3">
-                <ul>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Campus Life</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Community Services</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Internship</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Alumni</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Award</a>
-                  </li>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Scholarship</a>
-                  </li>
-                </ul>
-              </div>
-    </div>
-<!-- list 4 No Action Because I put Hidden -->
-    <div>
-              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown()">
-                <span class="text-[15px] ml-4">Facilities</span>
-              </div>
-              <!-- DropDown No action -->
-              <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
-                <ul>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Message from the Chairman</a>
-                  </li>
-                </ul>
-              </div>
-    </div>
-<!-- list 5 No Action Because I put Hidden -->
-    <div>
-              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 text-white hover:text-gray-900">
-                <span class="text-[15px] ml-4">Admission</span>
-              </div>
-              <!-- DropDown No action -->
-              <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
-                <ul>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#">Message from the Chairman</a>
-                  </li>
-                </ul>
-              </div>
-    </div>
-<!-- list 6 -->
-    <div>
-              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown4()">
-                <span class="text-[15px] ml-4">New and Event</span>
-              </div>
-              <!-- dropDown -->
-              <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m4">
-                <ul>
-                  <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
-                    <a href="#"> Announcement </a>
-                  </li>
-                </ul>
-              </div>
-    </div>
-    </div>
-  </div>
     <!-- End Of Header -->
     <!-- Function Js script -->
     <script src="ToggleHeader.js"></script>
     <!-- Fontawesome Script -->
-    <script
-    src="https://kit.fontawesome.com/edbf662727.js"
-    crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/edbf662727.js" crossorigin="anonymous"></script>
     <!-- FlowBit Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </body>
->>>>>>> 00f149832e4f5ed44fdc953953c79593832c6c7c
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
