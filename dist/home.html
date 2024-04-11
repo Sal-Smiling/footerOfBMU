@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +29,240 @@
             },
         };
     </script>
+    <script src="https://kit.fontawesome.com/edbf662727.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+    <!-- Brand BMU Logo img -->
+    <div class="w-full flex justify-center items-center p-3">
+        <img
+          class="xl:h-[10rem] lg:h-[8rem] md:h-[5rem] h-[4rem]"
+          src="../src/assets/Image/LogoBMU1.png"/>    
+    </div>
+    <!-- Header Full Screen -->   
+    <div class="bg-red-700  w-full relative mb-2 lg:block hidden">
+        <div class="max-w-7xl m-auto justify-between"> 
+            <ul class="justify-between items-center text-2xl text-white flex">   
+                <li class="hover:bg-slate-400 p-4 group">
+                        <a href="#">About Us</a>
+                        <div class="grid grid-cols-4 p-4 absolute top-16 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                          <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">Message from the Chairman</a></li>
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Vision,Mission and Objective</a></li>
+                            <li><a href="#">Core Value</a></li>
+                          </ul>
+                          <ul class="text-black gap-y-4 grid">
+                            <li><a href="#">PHilosophy</a></li>
+                            <li><a href="#">Strategic Goals</a></li>
+                            <li><a href="#">Management and Structure</a></li>
+                            <li><a href="#">Why Choosse BMU ?</a></li>
+                          </ul> 
+                        </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                      <a href="#">Faculties</a>
+                      <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                          <li><a href="#">Faculties</a></li>
+                          <li><a href="#">Curriculum</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                      <a href="#">Student</a>
+                      <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                          <li><a href="#">Campus Life</a></li>
+                          <li><a href="#">Community Services</a></li>
+                          <li><a href="#">Internship</a></li>
+                          <li><a href="#">Alumni</a></li>
+                          <li><a href="#">Award</a></li>
+                          <li><a href="#">Scholarship</a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                      <a href="#">Facilities</a>
+                      <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 hidden">
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                      <a href="#">Admission</a>
+                      <div class="grid-cols-4 gap-1 p-4 hidden absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black hidden gap-y-4">
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                        </ul>
+                      </div>
+                </li>
+                <li class="hover:bg-slate-400 p-4 group">
+                      <a href="#">New and Event</a>
+                      <div class="grid grid-cols-4 gap-1 p-4 absolute top-14 left-0 bg-slate-50 w-full z-50 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition duration-300">
+                        <ul class="text-black gap-y-4 grid">
+                          <li><a href="#">Announcement</a></li>
+                        </ul>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+         <!-- Header + SideBar Small Device -->
+    <div class="lg:hidden bg-red-700 flex justify-between p-3 mb-3">
+        <!-- Name That On The SideBar -->
+        <div class="uppercase font-medium text-4xl text-white">
+          <span>menu</span>
+        </div>
+        <!-- This Is Toggle Click Open -->
+        <span class="font-medium text-4xl cursor-pointer text-white" onclick="openBtn()">
+            <i class="fa-solid fa-bars"></i>
+        </span>
+        <!-- This is Menu List of SideBar -->
+        <div id="leftMenu" style="transition: .3s;" class="fixed top-0 right-[-1px] z-50 bottom-0 w-0 overflow-x-hidden text-center bg-red-700">
+        <div class="text-gray-100 text-xl">
+            <div class="p-2 mt-1 flex justify-between items-center">
+                <h1 class="font-bold text-gray-200 ml-3">BMU</h1>
+                <!-- This Is Toggle Click Open -->
+                <i class="fa-solid fa-x cursor-pointer" onclick="closeBtn()"></i>
+            </div>
+            <hr class="my-2 text-gray-200"/>
+          </div>
+          <!-- list 1 -->
+          
+          <div>
+              <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white"onclick="dropDown1()">
+                <span class="text-[15px] ml-4">About Us</span>
+            </div>
+            <!-- DropDown 1 -->
+            <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m1">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Message from the Chairman</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Background</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Vision,Mission and Objective</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Core Value</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">PHilosophy</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Strategic Goals</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Management and Structure</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Why Choosse BMU ?</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list 2 -->
+          <div>
+            <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown2()">
+              <span class="text-[15px] ml-4">Faculties</span>
+            </div>
+            <!-- DropDown 2 -->
+            <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m2">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Faculties</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Curriculum</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list 3 -->
+          <div>
+            <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:text-gray-900 hover:bg-slate-50 text-white" onclick="dropDown3()">
+              <span class="text-[15px] ml-4">Student</span>
+            </div>
+            <!-- dropwDown 3 -->
+            <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m3">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Campus Life</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Community Services</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Internship</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Alumni</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Award</a>
+                </li>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Scholarship</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list 4 No Action Because I put Hidden -->
+          <div>
+            <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown()">
+              <span class="text-[15px] ml-4">Facilities</span>
+            </div>
+            <!-- DropDown No action -->
+            <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Message from the Chairman</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list 5 No Action Because I put Hidden -->
+          <div>
+            <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 text-white hover:text-gray-900">
+              <span class="text-[15px] ml-4">Admission</span>
+            </div>
+            <!-- DropDown No action -->
+            <div class="hidden text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#">Message from the Chairman</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- list 6 -->
+          <div>
+            <div class="p-3 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-slate-50 hover:text-gray-900 text-white" onclick="dropDown4()">
+              <span class="text-[15px] ml-4">New and Event</span>
+            </div>
+            <!-- dropDown -->
+            <div class="text-left text-sm font-thin mt-2 w-4/5 mx-auto text-gray-200" id="m4">
+              <ul>
+                <li class="cursor-pointer p-2 hover:bg-gray-700 mt-1 rounded-md">
+                  <a href="#"> Announcement </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+      <!-- End Of Header -->
     <!-- Banner -->
-    <div id="indicators-carousel" class="relative w-full" data-carousel="static">
+    <div id="indicators-carousel" class="relative z-0 w-full" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <!-- Item 1 -->
@@ -289,7 +517,7 @@
             width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <!-- Footer -->
-    <footer class="mt-5 bg-zinc-800 text-center text-surface/75 dark:bg-neutral-500 text-white lg:text-left">
+    <footer class="mt-5 bg-zinc-800  text-center text-surface/75 dark:bg-neutral-500 text-white lg:text-left">
         <div class="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-white/10 lg:justify-between">
             <div class="me-12 hidden lg:block">
                 <span>Get connected with us on social networks:</span>
@@ -459,7 +687,8 @@
     </footer>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="ToggleHeader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 <script src="../src/assets/Js/partner.js"></script>
-
 </html>
